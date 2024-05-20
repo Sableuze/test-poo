@@ -7,5 +7,6 @@
 </template>
 
 <script lang="ts" setup>
-  //
+import { useListingsStore } from '@/stores/listings';
+useListingsStore().connect();
 </script>
