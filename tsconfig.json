@@ -14,8 +14,6 @@
       "vite/client",
       "vite-plugin-vue-layouts/client",
       "unplugin-vue-router/client",
-      "types/vue/",
-      "types/vue-router/"
     ],
     "allowJs": true,
     "strict": true,
