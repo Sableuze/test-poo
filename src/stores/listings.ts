@@ -60,7 +60,6 @@ export const useListingsStore = defineStore('listings', () => {
     wsConnection.onmessage = (message) => {
       const data = JSON.parse(message.data);
       // Update prices state based on received data
-      console.log(data);
       const ask = data.a[0];
       const bid = data.b[0];
       ask &&

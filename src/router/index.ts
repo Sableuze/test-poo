@@ -5,14 +5,15 @@
  */
 
 // Composables
-import { createRouter, createWebHistory } from 'vue-router/auto'
-import { setupLayouts } from 'virtual:generated-layouts'
-import {routes} from "./routes";
+import { createRouter, createWebHistory } from 'vue-router/auto';
+import { setupLayouts } from 'virtual:generated-layouts';
+import { routes } from './routes';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   extendRoutes: setupLayouts,
-  routes
-})
+  //@ts-ignore
+  routes,
+});
 
-export default router
+export default router;

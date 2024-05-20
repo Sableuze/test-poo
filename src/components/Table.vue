@@ -1,6 +1,6 @@
 <template>
   <v-data-table
-    :headers="visibleCols"
+    :headers="visibleCols as any"
     :items="data"
     :fixed-header="fixedHeader"
     :items-per-page="itemsPerPage"

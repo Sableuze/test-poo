@@ -3,8 +3,7 @@
     :model-value="listingsStore.getPair"
     @update:model-value="onModel"
     label="Select"
-    :items="PAIRS"
-    @change="setPair"></v-select>
+    :items="PAIRS"></v-select>
   <ChangeHistory :changes="listingsStore.getChanges"></ChangeHistory>
 </template>
 <script setup lang="ts">
